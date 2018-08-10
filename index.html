@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test Wrapper</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <style>
+        .menu {
+            position: relative;
+            float: right;
+            width: 200px;
+            height: 600px;
+            background: darkgrey;
+        }
+    </style>
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./index.js">
+
+    </script>
+</head>
+<body>
+<iframe width="800px" height="600px" id="gameContainer"></iframe>
+<div class="menu">
+
+        <div class="form-group">
+            <label for="gameUrl">Test Game Adress</label>
+            <input type="url" class="form-control" id="gameUrl" placeholder="Game Url">
+            <button class="btn btn-default" onclick="changeSRC()">Launch</button>
+        </div>
+
+    <button class="btn btn-default" onclick="send('play')">Play</button>
+    <button class="btn btn-default" onclick="send('spin')">Spin</button>
+    <button class="btn btn-default" onclick="send('pause')">Pause</button>
+    <button class="btn btn-default" onclick="send('unpause')">Unpause</button>
+    <button class="btn btn-default" onclick="send('10auto')">10 AUTO</button>
+    <button class="btn btn-default" onclick="send('until')">UNTIL FEATURE</button>
+    <button class="btn btn-default" onclick="send('resetAuto')">reset AUTO</button>
+    <button class="btn btn-default" onclick="send('showPaytable')">Show Paytable</button>
+    <button class="btn btn-default" onclick="send('hidePaytable')">Hide Paytable</button>
+    <button class="btn btn-default" onclick="send('turboON')">turbo ON</button>
+    <button class="btn btn-default" onclick="send('turboOff')">turbo OFF</button>
+    <button class="btn btn-default" onclick="send('increaseBet')">increase bet</button>
+    <button class="btn btn-default" onclick="send('decreaseBet')">decrease bet</button>
+</div>
+</body>
+</html>
